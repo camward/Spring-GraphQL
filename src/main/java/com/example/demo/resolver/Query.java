@@ -1,6 +1,6 @@
 package com.example.demo.resolver;
 
-import com.coxautodev.graphql.tools.GraphQLResolver;
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.example.demo.model.Author;
 import com.example.demo.model.Tutorial;
 import com.example.demo.repository.AuthorRepository;
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Query implements GraphQLResolver {
+public class Query implements GraphQLQueryResolver {
     private AuthorRepository authorRepository;
     private TutorialRepository tutorialRepository;
 
